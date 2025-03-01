@@ -58,6 +58,10 @@ services:
     environment:
       TZ: ${TZ}  # Set the container timezone
 
+    # Define the host and container ports
+    ports:
+      - "${JELLYFIN_PORT}:8096"  # Jellyfin web UI port
+
     # Mount host directories into the container
     volumes:
       - ${JELLYFIN_CONFIG_PATH}:/config:rw  # Mount configuration directory
