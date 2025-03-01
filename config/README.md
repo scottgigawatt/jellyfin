@@ -1,22 +1,24 @@
-# Jellyfin Configuration 🏝️🐠
+# 🦀 Jellyfin Configuration: Your Treasure Map to Media Bliss! 🌊🍹
 
-The `config` directory serves as the `/config` directory for the Jellyfin container. It contains folders Jellyfin uses to store configuration, cache data, and logs when deployed via Docker Compose.
+Ahoy, matey! 💀 This here **`config`** directory be the **captain’s quarters** for yer Jellyfin vessel. When ye hoist yer Jellyfin container with Docker Compose, this be where it stores **all its secrets, logs, and cached booty!** 🧼
 
-## Directory Structure
+## 🌍 The Captain’s Log: Directory Structure
 
 - **config/** 📝
-  Contains Jellyfin’s server preferences and user settings.
+  Holds Jellyfin’s **server scrolls**, user settings, and preferences. **Tweak at yer own risk!**
 
-- **cache/** ⚡
-  Holds data cached by Jellyfin for faster access to media metadata.
+- **cache/** 🌊
+  A deep sea trench of cached data—Jellyfin keeps **media metadata here** for lightning-fast retrieval.
 
-- **logs/** 🔎
-  Stores log files for monitoring and troubleshooting.
+- **logs/** 🌌
+  The black box of yer ship! Stores **logs for monitoring and troubleshooting** when the seas get rough.
 
-Feel free to explore or adjust these folders as needed.
+🦠 Adjust these as ye see fit, but beware: delete at yer own peril!
 
 ---
 
-For more information about Jellyfin and its usage, refer to the [official documentation](https://jellyfin.org/docs/).
+For **tales of Jellyfin legend**, visit the [**official documentation**](https://jellyfin.org/docs/).
 
-If you have any questions or need further assistance, feel free to reach out. Enjoy your media streaming!
+Got questions? **Send a message in a bottle**, and we’ll help ya steer clear of trouble! 🏳️🌌
+
+Now set sail, and may yer streams be smooth and yer buffers be swift! 🌟
