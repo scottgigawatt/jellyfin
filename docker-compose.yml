@@ -1,14 +1,12 @@
 ---
 #
-# docker-compose.yml: Jellyfin Deployment for Synology NAS & macOS
+# docker-compose.yml: Jellyfin Deployment for Synology NAS
 #
 # This Docker Compose configuration simplifies the setup process for deploying
 # Jellyfin, a media server for organizing and streaming your movies, music, and more.
 #
 # Service Included:
 #   - Jellyfin: Provides a media server to stream and manage your media.
-#
-# Compatible with Synology NAS and macOS for flexible deployment.
 #
 # For setup instructions and additional configurations, visit:
 # - Jellyfin Setup Guide: https://jellyfin.org/docs/
