@@ -1,14 +1,19 @@
----
 #
 # docker-compose.yml: Jellyfin Deployment for Synology NAS
 #
-# This Docker Compose configuration simplifies the setup process for deploying
-# Jellyfin, a media server for organizing and streaming your movies, music, and more.
+# This Docker Compose configuration streamlines the setup and management of Jellyfin,
+# an open-source media server that allows you to organize and stream your movies,
+# TV shows, music, and more. Designed for use on a Synology NAS, this setup ensures
+# optimal performance, security, and easy updates.
 #
-# Service Included:
-#   - Jellyfin: Provides a media server to stream and manage your media.
+# Features:
+#   - Automated deployment of Jellyfin via Docker Compose.
+#   - Persistent storage for media, configuration, logs, and cache.
+#   - Configurable network settings for seamless integration.
+#   - Health checks to ensure the service remains available.
+#   - Secure setup with privilege restrictions and logging controls.
 #
-# For setup instructions and additional configurations, visit:
+# For setup instructions, troubleshooting, and additional configurations, visit:
 # - Jellyfin Setup Guide: https://jellyfin.org/docs/
 # - Marius Guide: https://mariushosting.com/synology-install-jellyfin-with-portainer/
 #
