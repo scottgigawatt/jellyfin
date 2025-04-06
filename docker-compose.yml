@@ -71,8 +71,7 @@ services:
       - ${JELLYFIN_CACHE_PATH}:/cache:rw    # Mount cache directory
       - ${JELLYFIN_LOGS_PATH}:/logs:rw      # Mount logs directory
       - ${JELLYFIN_MOVIES_PATH}:/movies:rw  # Mount movies directory
-      - ${JELLYFIN_TV_PATH}:/tv:rw          # Mount tv directory
-      - ${JELLYFIN_MUSIC_PATH}:/music:rw    # Mount music directory
+      - ${JELLYFIN_SCENES_PATH}:/scenes:rw  # Mount scenes directory
 
 #
 # Define the networks section
