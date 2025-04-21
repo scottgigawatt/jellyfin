@@ -26,7 +26,9 @@ Here's your crew of trusty sea creatures—ready to keep your Jellyfin reef aliv
 
 > [!TIP]
 > 🪼 This project deploys Jellyfin as a standalone jellyfish gliding through your media reef.
+>
 > Want to build a full undersea kingdom? Check out [Plundarr](https://github.com/scottgigawatt/plundarr) for automating movies, TV shows, and more!
+>
 > For the deeper, more... _private coves_ of your collection, there's also [Boudoirr](https://github.com/scottgigawatt/boudoirr)—a hidden pearl meant just for you. 🌊
 
 ## Setting Sail 🚀
