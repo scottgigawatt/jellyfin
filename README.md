@@ -33,7 +33,7 @@ Here's your crew of trusty sea creatures—ready to keep your Jellyfin reef aliv
 
 ## Setting Sail 🚀
 
-### 🛠️ Cloning the Project to Your NAS or Server
+### 🛠️ Cloning the Project
 
 Pull the project down to your device like a swift current:
 
@@ -44,7 +44,7 @@ git clone https://github.com/scottgigawatt/jellyfin.git /volume1/docker/jellyfin
 > [!NOTE]
 > 🌎 Adjust the target folder depending on your ocean floor—Synology 🖥️, macOS 🍎, Linux 🐧—whatever floats your boat 🚤.
 
-### 🐟 Setting Up Your Environment Variables
+### 🐟 Setting Environment Variables
 
 Every underwater lab needs the right pressure settings. Copy the example `.env` file and tweak it to fit your sea conditions:
 
