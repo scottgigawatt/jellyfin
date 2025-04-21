@@ -1,4 +1,4 @@
-_🎬 Smash that ⭐️ like you're setting up your tenth "personal media" reef._
+_🪼 Drop a ⭐️ in the reef if this Jellyfin made your media swim smoother!_
 
 # Jellyfin 🪼🎥
 
@@ -14,7 +14,7 @@ Take a deeper dive into the Docker Compose configuration by checking out the fil
 
 - 📄 [View docker-compose.yml](./docker-compose.yml)
 
-Special thanks to [Lixandru Marius Bogdan](https://github.com/mariushosting) for his original guides that helped chart the early currents for this setup.
+Special thanks to [Lixandru Marius Bogdan](https://github.com/mariushosting) 🧭🐟 for helping chart the early currents and guide this Jellyfin reef to life.
 
 ## What's in the Tank? 🛠️
 
@@ -67,7 +67,7 @@ vim .env
 ### 📚 Essential Pre-Dive Checklist
 
 > [!IMPORTANT]
-> 🪼 _Before diving deep, make sure your gear is set..._
+> 🪼 _Before diving deep, make sure your gear is set…_
 
 Read the [Docker Project Setup](./SETUP.md) guide. It covers all the crucial setup steps like networking currents, fine-tuning Synology-specific settings, firewall tweaks, and deploying with DSM Container Manager.
 
@@ -93,13 +93,13 @@ Licensed under the Apache 2 License—open waters, open code. 📄
 ---
 
 ```
-                _.-=-._
-             o~`  '  > `.
-             `.  ,       :          Jellyfin Reef 🪼🌊
-              `"-.__/    `.    ~ Drift deeper into your media ocean ~
-                    `--.___~
-          ~~~ ~~~~   ~~~~~ ~~~ ~~~~~ ~~~~ ~~~ ~~~ ~~~~ ~~~
-         ~ ~  ~~~ ~~~~  ~~~~ ~~~ ~~~  ~~~~ ~~~ ~~~ ~~~~ ~
+            _.-=-._
+         o~`  '  > `.
+         `.  ,       :          Jellyfin Reef 🪼🌊
+          `"-.__/    `.    ~ Drift deeper into your media ocean ~
+                `--.___~
+      ~~~ ~~~~   ~~~~~ ~~~ ~~~~~ ~~~~ ~~~ ~~~ ~~~~ ~~~
+     ~ ~  ~~~ ~~~~  ~~~~ ~~~ ~~~  ~~~~ ~~~ ~~~ ~~~~ ~
 ```
 
 Contributions, pull requests, and bubble-blowing contests welcome. Happy streaming and may your ocean of media always stay crystal clear! 🪼📺
