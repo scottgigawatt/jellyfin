@@ -14,7 +14,7 @@ Take a deeper dive into the Docker Compose configuration by checking out the fil
 
 - 📄 [View docker-compose.yml](./docker-compose.yml)
 
-Special thanks to [Lixandru Marius Bogdan](https://github.com/mariushosting) 🧭🐟 for helping chart the early currents and guide this Jellyfin reef to life.
+Special thanks to [Lixandru Marius Bogdan](https://github.com/mariushosting) 🧭🐟 for charting the early currents and guide this Jellyfin reef to life.
 
 ## What's in the Tank? 🛠️
 
