@@ -1,131 +1,103 @@
-# 🦀 Jellyfin: The High Seas of Streaming! 🎥
+_🎬 Smash that ⭐️ like you're setting up your tenth "personal media" reef._
 
-Ahoy, media mariners! 💀 Welcome to **Jellyfin**, your open-source media **galleon** sailing the vast ocean of entertainment! 🌊 This repo helps you deploy **Jellyfin on your Synology NAS** using **Docker Compose**—so grab your spyglass and let's chart a course to **ad-free, subscription-free** streaming! 🌌
+# Jellyfin 🪼🎥
 
----
+Welcome to Jellyfin—a deep dive into running your own private streaming sanctuary on Synology NAS or any Docker-ready harbor! Think of it as your underwater media lab for organizing and enjoying your... perfectly legitimate media collection. 🌊
 
-## 📄 The Captain's Log
+## Overview 📋
 
-This repo be inspired by the legendary [**Lixandru Marius Bogdan**](https://github.com/mariushosting) and fine-tuned for **Synology NAS buccaneers** who want to command their media **without corporate sea monsters** meddlin' in their affairs.
+> 🪼 **Because sometimes you need your "personal backups" ready for binge-watching.**
 
-### **Features Fit for a Sea Dog:**
+This project sets up Jellyfin using Docker Compose, perfect for hosting your personal sea of movies, TV shows, and more. Whether you're cataloging classics or totally legal copies of cinema, this setup lets you swim laps around the paid streaming sharks.
 
-- 🎥 **Deep-Sea Streaming** – Plunder movies, TV shows, music, and photos from your very own **media reef**.
-- 🏰 **Self-Hosted & Free** – No subscriptions, no scallywags **stealin' your data**!
-- ⚙️ **Easy as Hoisting a Sail** – Just tweak `.env` settings and you're set to sail!
-- 🔒 **Treasure Locked & Secure** – Your **private media trove** stays safe **aboard your NAS**.
+Take a deeper dive into the Docker Compose configuration by checking out the files in this repository:
 
-📖 **[Jellyfin Ship's Manual](https://jellyfin.org/docs/)** | 📖 **[Synology Setup Scroll](https://mariushosting.com/synology-install-jellyfin-with-portainer/)**
+- 📄 [View docker-compose.yml](./docker-compose.yml)
 
----
+Special thanks to [Lixandru Marius Bogdan](https://github.com/mariushosting) for his original guides that helped chart the early currents for this setup.
 
-## 🌊 Navigating the Waters: Network & Firewall Setup
+## What's in the Tank? 🛠️
 
-Jellyfin needs smooth sailing to stream like a dream. This setup uses **Docker IPAM (IP Address Management)** to keep yer ship steady. Adjust yer **firewall settings** or risk getting lost in the briny deep! 🏳️
+Here's your crew of trusty sea creatures—ready to keep your Jellyfin reef alive and thriving:
 
-### **IPAM Configuration**
+| Tool                | Description                                                   | More Info                                           |
+|---------------------|---------------------------------------------------------------|-----------------------------------------------------|
+| **Jellyfin** 🪼     | The pearl of your media reef. Your media, your rules.          | [Official Site](https://jellyfin.org/)              |
 
-Set yer **network subnet, IP range, and gateway** in yer `.env` file:
+> [!TIP]
+> 🪼 This project deploys Jellyfin as a standalone jellyfish gliding through your media reef.
+> Want to build a full undersea kingdom? Check out [Plundarr](https://github.com/scottgigawatt/plundarr) for automating movies, TV shows, and more!
+> For the deeper, more... _private coves_ of your collection, there's also [Boudoirr](https://github.com/scottgigawatt/boudoirr)—a hidden pearl meant just for you. 🌊
 
-```bash
-COMPOSE_NETWORK_SUBNET="${COMPOSE_NETWORK_SUBNET:-172.24.0.0/16}"
-COMPOSE_NETWORK_IP_RANGE="${COMPOSE_NETWORK_IP_RANGE:-172.24.5.0/24}"
-COMPOSE_NETWORK_GATEWAY="${COMPOSE_NETWORK_GATEWAY:-172.24.5.254}"
+## Setting Sail 🚀
+
+### 🛠️ Cloning the Project to Your NAS or Server
+
+Pull the project down to your device like a swift current:
+
+```sh
+git clone https://github.com/scottgigawatt/jellyfin.git /volume1/docker/jellyfin
 ```
 
-### **Batton Down the Firewall!** 🔥
+> [!NOTE]
+> 🌎 Adjust the target folder depending on your ocean floor—Synology 🖥️, macOS 🍎, Linux 🐧—whatever floats your boat 🚤.
 
-1. Open **Control Panel** → **Security** → **Firewall**.
-2. Click **Edit Rules** → **Create New Rule**.
-3. **Ports**: Select `All`
-4. **Source IP**: Choose `Specific IP`, then enter:
-   - **IP Address:** `172.24.0.0`
-   - **Subnet mask:** `255.255.0.0`
-5. **Action**: Select `Allow`, then **Apply**.
+### 🐟 Setting Up Your Environment Variables
 
-Your media vessel shall now **sail unimpeded** through the digital seas! 🌍
+Every underwater lab needs the right pressure settings. Copy the example `.env` file and tweak it to fit your sea conditions:
 
----
-
-## 🚀 Hoist the Colors! Deploying Jellyfin
-
-Follow these steps to launch yer **floating fortress of entertainment** in minutes.
-
-### **1. Yer Storage Holds Are Ready!** 📚
-
-Yer **config directory** is set up **automagically**! Just mount yer media and set sail:
-
-```console
-config/
-├── cache/
-├── config/
-├── logs/
-```
-
-### **2. Copy & Edit Yer `.env` File** 📝
-
-Rename the example file and **customize it to match yer ship's specs**:
+- 📄 [View example.env](example.env)
 
 ```sh
 cp example.env .env
-vim .env  # Adjust as needed, ye salty dog!
+
+# Edit as needed
+vim .env
 ```
 
-### **3. Deploy with DSM Container Manager** 🏠
+> [!TIP]
+> Want to override environment variables on the fly like a speedy marlin? Splash them into the command line:
+>
+> ```bash
+> JELLYFIN_TAG="latest" docker-compose up -d
+> ```
 
-1. Open **DSM Container Manager**.
-2. Navigate to **Projects** → Click **Create**.
-3. Choose **Import YAML** and select yer `docker-compose.yml`.
-4. Click **Next** → Review settings → Click **Apply**.
+### 📚 Essential Pre-Dive Checklist
 
-### **4. Or Use Portainer If Ye Prefer!** 🖥️
+> [!IMPORTANT]
+> 🪼 _Before diving deep, make sure your gear is set..._
 
-1. Open **Portainer** → Go to **Stacks**.
-2. Click **Add Stack** → Name it `jellyfin`.
-3. Upload yer `docker-compose.yml`.
-4. Click **Deploy the Stack**.
+Read the [Docker Project Setup](./SETUP.md) guide. It covers all the crucial setup steps like networking currents, fine-tuning Synology-specific settings, firewall tweaks, and deploying with DSM Container Manager.
 
-### **5. Ready the Cannons! Access Yer Media** 🌐
+Highlighted swim lanes:
 
-Point yer browser at:
+- 🌐🔧 [Configuring Docker Networking](./SETUP.md#configuring-docker-networking-)
+- 🖥️⚙️ [Synology Configuration](./SETUP.md#synology-configuration-)
+  - 🔥🛡️ [Updating Firewall Settings](./SETUP.md#updating-firewall-settings-)
+  - 📦🚀 [Deploying With Container Manager](./SETUP.md#deploying-with-container-manager-)
 
-- **Jellyfin Dashboard:** `https://jellyfin.yourname.synology.me`
+Skipping this could leave you tangled in a kelp forest—don't risk it.
 
-Finish the setup wizard, add yer media, and set sail for an **ocean of entertainment**! 📺
+## Where This Swims 🐬
 
----
+This Jellyfin setup has been fully tested on Synology DS1522+ and DS916+ running DSM 7.2. But this setup isn't just for Synology! It should float just fine on macOS, Linux, or any other system that runs Docker.
 
-## 🦠 Exploring the Docker Compose Setup
+If you have gills (or Docker Compose), you can swim with us.
 
-The full **`docker-compose.yml`** file is here **should ye need to tinker with yer ship's hull**.
+## Open Waters License 🌊
 
-📑 **[View docker-compose.yml](./docker-compose.yml)**
-
----
-
-## 🤿 Troubleshooting: Avoiding the Kraken's Grasp
-
-- Check if yer **Jellyfish be afloat**:
-
-  ```bash
-  docker ps | grep ${JELLYFIN_CONTAINER_NAME}
-  ```
-
-- Inspect the **captain's logs** for any beasties:
-
-  ```bash
-  docker logs ${JELLYFIN_CONTAINER_NAME}
-  ```
-
-- Verify yer **.env** settings—one wrong number and ye could be **sailing in circles**!
-- Ensure **NAS firewall rules** are letting yer ship through the fog.
+Licensed under the Apache 2 License—open waters, open code. 📄
 
 ---
 
-## 🎉 That's a Wrap, Ye Old Sea Dog
+```
+                _.-=-._
+             o~`  '  > `.
+             `.  ,       :          Jellyfin Reef 🪼🌊
+              `"-.__/    `.    ~ Drift deeper into your media ocean ~
+                    `--.___~
+          ~~~ ~~~~   ~~~~~ ~~~ ~~~~~ ~~~~ ~~~ ~~~ ~~~~ ~~~
+         ~ ~  ~~~ ~~~~  ~~~~ ~~~ ~~~  ~~~~ ~~~ ~~~ ~~~~ ~
+```
 
-Congratulations, ye've deployed **Jellyfin, the finest media vessel on the high seas!** Enjoy yer private treasure **without ads, fees, or landlubber nonsense**!
-
-A mighty thanks to [Lixandru Marius Bogdan](https://github.com/mariushosting) for the inspiration!
-
-🎬 Happy sailing, matey! 🌌
+Contributions, pull requests, and bubble-blowing contests welcome. Happy streaming and may your ocean of media always stay crystal clear! 🪼📺
