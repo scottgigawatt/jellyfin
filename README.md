@@ -7,9 +7,9 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Reef%20Ready-Docker-blue?logo=docker" alt="Reef Ready" />
   <img src="https://img.shields.io/badge/Currents%20Encrypted-WireGuard%20%7C%20PIA-green?logo=protonvpn" alt="Currents Encrypted" />
-  <img src="https://img.shields.io/github/license/scottgigawatt/jellyfin-project?label=Open%20Waters%20License&color=blue" alt="Open Waters License" />
-  <img src="https://img.shields.io/github/last-commit/scottgigawatt/jellyfin-project?label=Last%20Splash&logo=git" alt="Last Splash" />
-  <img src="https://img.shields.io/github/repo-size/scottgigawatt/jellyfin-project?label=Coral%20Cache" alt="Coral Cache" />
+  <img src="https://img.shields.io/github/license/scottgigawatt/jellyfin?label=Open%20Waters%20License&color=blue" alt="Open Waters License" />
+  <img src="https://img.shields.io/github/last-commit/scottgigawatt/jellyfin?label=Last%20Splash&logo=git" alt="Last Splash" />
+  <img src="https://img.shields.io/github/repo-size/scottgigawatt/jellyfin?label=Coral%20Cache" alt="Coral Cache" />
   <img src="https://img.shields.io/badge/Sea--Tested-Synology%20%7C%20macOS-blue" alt="Sea-Tested" />
   <img src="https://img.shields.io/badge/Current%20Supply-Flowing-orange" alt="Current Supply" />
 </p>
