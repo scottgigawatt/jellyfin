@@ -48,7 +48,7 @@ Here's your crew of trusty sea creatures—ready to keep your Jellyfin reef aliv
 <p align="center">
   <a href="https://github.com/scottgigawatt/plundarr">
     <img src="https://img.shields.io/badge/🦜%20Plundarr%20-%20Media%20Automation%20Tools%20💾-7e3f98?style=for-the-badge&labelColor=4b286d" alt="Plundarr Media Tools" />
-  </a>
+  </a>&nbsp;&nbsp;
   <a href="https://github.com/scottgigawatt/boudoirr">
     <img src="https://img.shields.io/badge/🔥%20Boudoirr%20-%20Private%20Pleasures%20Stack%20🖤🥀-ff69b4?style=for-the-badge&labelColor=880e4f" alt="Boudoirr Private Stack" />
   </a>
