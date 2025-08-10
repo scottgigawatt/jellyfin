@@ -14,6 +14,18 @@
   <img src="https://img.shields.io/badge/Current%20Supply-Flowing-orange" alt="Current Supply" />
 </p>
 
+<p align="center">─── ⛧ ───</p>
+
+<p align="center">
+    <em>🍇 Streaming woes? Charm the media gods and <strong>Enter 🔥HADES🔥</strong>.</em>
+</p>
+
+<p align="center">
+  <a href="https://discord.gg/BpEGzWwGYf">
+    <img src="https://img.shields.io/discord/1403601106315116626?label=%F0%9F%94%A5HADES%F0%9F%94%A5&logo=discord&logoColor=white&color=5865F2" alt="🔥HADES🔥 Discord" />
+  </a>
+</p>
+
 <hr />
 
 # Jellyfin 🪼🎥
