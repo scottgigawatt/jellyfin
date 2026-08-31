@@ -30,6 +30,11 @@
 
 # Jellyfin 🪼🎥
 
+> [!IMPORTANT]
+> **This standalone repository is deprecated.** [Plundarr](https://github.com/scottgigawatt/plundarr#readme) is the maintained successor, where Maraudarr generates the equivalent deployment as the `jellyfin` preset. Use Plundarr for new deployments, migrations, dependency updates, and future releases.
+>
+> Existing deployments can keep swimming, but migrate when practical. After this notice lands, a final archival release will be cut from `main`; no further feature or dependency updates are planned here. This reef has joined the larger fleet. 🪼
+
 Welcome to Jellyfin—a deep dive into running your own private streaming sanctuary on Synology NAS or any Docker-ready harbor! Think of it as your underwater media lab for organizing and enjoying your... perfectly legitimate media collection. 🌊
 
 ## Overview 📋
